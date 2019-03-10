@@ -2,13 +2,13 @@ var map;
 var serviceMemes;
 var LocationsMemes;
 
-var LatMidpointMemes = 43.4643;
-var LongMidpointMemes = 80.5204;
+var LatMidpointMemes = "43.4643";
+var LongMidpointMemes = "80.5204";
 var RadiusMemes = 1000;
 
 function FindPlaces() {
 
-var originMemes = new google.maps.LatLng("43", "80");
+var originMemes = new google.maps.LatLng(LatMidpointMemes, LongMidpointMemes);
 
 map = new google.maps.Map(document.getElementById('map'), {
       center: originMemes,
