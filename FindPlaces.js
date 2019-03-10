@@ -40,7 +40,7 @@ wait(100)
 	for (var i = 0; i < LocationsMemes.length; i++) {
 		if ("rating" in LocationsMemes[i]) {
 			if ("name" in LocationsMemes[i]) {
-				NamesAndRatings.push({name : LocationsMemes[i].name, rating : LocationsMemes[i].rating});
+				NamesAndRatings.push({"name" : LocationsMemes[i].name, "rating" : LocationsMemes[i].rating});
 			}
 		}
 	}
