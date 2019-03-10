@@ -19,6 +19,7 @@ serviceMemes = new google.maps.places.PlacesService(map);
 	var request = {
 		location: {lat: LatMidpointMemes, lng: LongMidpointMemes},
 		radius: RadiusMemes,
+		type: ['restaurant']
 	}
 
 serviceMemes.nearbySearch(request, callback);
