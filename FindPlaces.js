@@ -25,8 +25,8 @@ serviceMemes = new google.maps.places.PlacesService(map);
 serviceMemes.nearbySearch(request, callback);
 
 	for (var i = 0; i < LocationsMemes.length; i++) {
-		if "rating" in result[i] {
-			if "name" in result[i] {
+		if ("rating" in result[i]) {
+			if ("name" in result[i]) {
 				NamesAndRatings.push({name : name[i], rating : rating[i]});
 			}
 		}
@@ -34,6 +34,13 @@ serviceMemes.nearbySearch(request, callback);
 	NamesAndRatings.sort(function(a,b) {
 		return b.rating - a.rating;
 	})
+return NamesAndRatings;
+}
+
+function callback(results, status) {
+	if (status == google.maps.places.PlacesServiceStatus.OK) {
+			LocationsMemes = results;
+	}
 }
 
 function callback(results, status) {
