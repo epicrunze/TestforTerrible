@@ -20,7 +20,6 @@ serviceMemes = new google.maps.places.PlacesService(map);
 	var request = {
 		location: originMemes,
 		radius: RadiusMemes,
-		RankBy: 'google.maps.places.RankBy.DISTANCE',
 	}
 
 serviceMemes.nearbySearch(request, callback);
