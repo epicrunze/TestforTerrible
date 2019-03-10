@@ -8,17 +8,16 @@ var RadiusMemes = 1000;
 
 function FindPlaces() {
 
-var originMemes = new google.maps.LatLng(LatMidpointMemes, LongMidpointMemes);
 
 map = new google.maps.Map(document.getElementById('map'), {
-      center: originMemes,
+      center: {lat: LatMidpointMemes, lng: LongMidpointMemes},
     });
 
 
 serviceMemes = new google.maps.places.PlacesService(map);
 
 	var request = {
-		location: originMemes,
+		location: {lat: LatMidpointMemes, lng: LongMidpointMemes},
 		radius: RadiusMemes,
 	}
 
