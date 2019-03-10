@@ -24,17 +24,7 @@ serviceMemes = new google.maps.places.PlacesService(map);
 
 serviceMemes.nearbySearch(request, callback);
 
-	for (var i = 0; i < LocationsMemes.length; i++) {
-		if ("rating" in LocationsMemes[i]) {
-			if ("name" in LocationsMemes[i]) {
-				NamesAndRatings.push({name : name[i], rating : rating[i]});
-			}
-		}
-	}
-	NamesAndRatings.sort(function(a,b) {
-		return b.rating - a.rating;
-	})
-return NamesAndRatings;
+	
 }
 
 function callback(results, status) {
