@@ -11,6 +11,7 @@ function FindPlaces() {
 
 map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: LatMidpointMemes, lng: LongMidpointMemes},
+	zoom: 15
     });
 
 
