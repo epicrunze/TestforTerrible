@@ -34,7 +34,6 @@ serviceMemes.nearbySearch(request, callback);
 	NamesAndRatings.sort(function(a,b) {
 		return b.rating - a.rating;
 	})
-return NamesAndRatings;
 }
 
 function callback(results, status) {
