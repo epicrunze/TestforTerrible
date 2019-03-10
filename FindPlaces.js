@@ -2,8 +2,8 @@ var map;
 var serviceMemes;
 var LocationsMemes;
 var NamesAndRatings;
-var LatMidpointMemes;
-var LongMidpointMemes;
+var LatMidpointMemes = 40;
+var LongMidpointMemes = -80;
 
 
 function FindPlaces() {
