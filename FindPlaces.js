@@ -23,7 +23,7 @@ serviceMemes = new google.maps.places.PlacesService(map);
 	}
 
 serviceMemes.nearbySearch(request, callback);
-
+console.log("yeet")
 	for (var i = 0; i < LocationsMemes.length; i++) {
 		if ("rating" in LocationsMemes[i]) {
 			if ("name" in LocationsMemes[i]) {
