@@ -6,6 +6,7 @@ var LatMidpointMemes = 40;
 var LongMidpointMemes = -80;
 
 
+
 function FindPlaces() {
 
 
@@ -23,7 +24,7 @@ serviceMemes = new google.maps.places.PlacesService(map);
 	}
 
 serviceMemes.nearbySearch(memequest, callmemes);
-
+wait(100)
 	for (var i = 0; i < LocationsMemes.length; i++) {
 		if ("rating" in LocationsMemes[i]) {
 			if ("name" in LocationsMemes[i]) {
@@ -39,6 +40,13 @@ return NamesAndRatings;
 
 function callmemes(results, status) {
 	if (status == google.maps.places.PlacesServiceStatus.OK) {
-	LocationsMemes = results;
+			LocationsMemes = results;
 	}
+}
+function wait(ms)
+{
+var d = new Date();
+var d2 = null;
+do { d2 = new Date(); }
+while(d2-d < ms);
 }
